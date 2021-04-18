@@ -1,8 +1,9 @@
 import React from "react";
-import { Button, makeStyles, Typography } from "@material-ui/core";
-// import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
+import { makeStyles, Typography } from "@material-ui/core";
 import backgroundimg from "../Assets/bkimg.png";
+import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
+import Resume from "../Assets/docs/cv.pdf";
+import DownBtn from "./DownBtn";
 
 const style = makeStyles((theme) => ({
   main: {
@@ -22,11 +23,11 @@ const style = makeStyles((theme) => ({
     },
 
     [theme.breakpoints.up("md")]: {
-      // backgroundImage: "url(" + backgroundimg + ")",
-      // height: "100vh",
-      // backgroundPosition: "center",
-      // backgroundSize: "cover",
-      // backgroundRepeat: "no-repeat",
+      backgroundImage: "url(" + backgroundimg + ")",
+      height: "100vh",
+      backgroundPosition: "center",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
     },
     [theme.breakpoints.up("lg")]: {
       backgroundImage: "url(" + backgroundimg + ")",
@@ -38,17 +39,17 @@ const style = makeStyles((theme) => ({
   },
   content: {
     [theme.breakpoints.up("xs")]: {
-      paddingTop: "150px",
+      paddingTop: "165px",
       textAlign: "center",
     },
     [theme.breakpoints.up("sm")]: {
-      paddingTop: "150px",
+      paddingTop: "165px",
       textAlign: "center",
     },
 
     [theme.breakpoints.up("md")]: {
-      // paddingTop: "200px",
-      // textAlign: "center",
+      paddingTop: "200px",
+      textAlign: "center",
     },
     [theme.breakpoints.up("lg")]: {
       paddingTop: "200px",
@@ -57,54 +58,21 @@ const style = makeStyles((theme) => ({
   },
   heading: {
     [theme.breakpoints.up("sm")]: {
-      fontSize: "26px",
-      fontWeight: "300",
+      fontSize: "30px",
+      fontWeight: "350",
     },
     [theme.breakpoints.up("sm")]: {
-      fontSize: "26px",
-      fontWeight: "300",
+      fontSize: "30px",
+      fontWeight: "350",
     },
 
     [theme.breakpoints.up("md")]: {
-      // fontSize: "32px",
-      // fontWeight: "700",
+      fontSize: "32px",
+      fontWeight: "500",
     },
     [theme.breakpoints.up("lg")]: {
       fontSize: "32px",
       fontWeight: "500",
-    },
-  },
-  btn: {
-    [theme.breakpoints.up("xs")]: {
-      padding: "0px 0px 0px 0px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      padding: "0px 0px 0px 0px",
-    },
-
-    [theme.breakpoints.up("md")]: {
-      // padding: "0px 3px 0px 10px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      padding: "0px 3px 0px 10px",
-    },
-  },
-  btn_title: {
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "15px",
-      padding: "5px 0px 5px 18px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "15px",
-      padding: "5px 0px 5px 18px",
-    },
-
-    [theme.breakpoints.up("md")]: {
-      // padding: "0px 3px 0px 10px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "15px",
-      padding: "10px 0px 10px 10px",
     },
   },
 }));
@@ -123,22 +91,17 @@ const intro = () => {
           </Typography>
         </div>
         <br />
-        <Button
-          className={classes.btn}
-          style={{ background: "linear-gradient(to right, #732fdf, #bd00ff" }}
-          variant="contained"
-        >
-          <Typography className={classes.btn_title} style={{ color: "white" }}>
-            get cv
-          </Typography>
-          <CloudDownloadIcon
-            style={{
-              color: "white",
-              paddingRight: "10px",
-              paddingLeft: "10px",
-            }}
-          />
-        </Button>
+        <DownBtn
+          text="GET CV"
+          file={Resume}
+          icon={
+            <CloudDownloadIcon
+              style={{
+                color: "white",
+              }}
+            />
+          }
+        />
       </div>
     </div>
   );

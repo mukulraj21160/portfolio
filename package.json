@@ -13,6 +13,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-sweet-progress": "^1.1.2",
+    "text-icons": "^4.0.11",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

@@ -1,5 +1,5 @@
 import React from "react";
-import { IconButton, makeStyles, Typography } from "@material-ui/core";
+import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
@@ -8,13 +8,17 @@ import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 
 const style = makeStyles((theme) => ({
   main: {
+    [theme.breakpoints.up("xs")]: {
+      textAlign: "center",
+      backgroundColor: "#000000",
+    },
     [theme.breakpoints.up("sm")]: {
       textAlign: "center",
       backgroundColor: "#000000",
     },
     [theme.breakpoints.up("md")]: {
-      // textAlign: "center",
-      // backgroundColor: "#000000",
+      textAlign: "center",
+      backgroundColor: "#000000",
     },
     [theme.breakpoints.up("lg")]: {
       textAlign: "center",
@@ -22,109 +26,165 @@ const style = makeStyles((theme) => ({
     },
   },
   btn: {
+    [theme.breakpoints.up("xs")]: {
+      color: "red",
+      fontSize: "25px",
+    },
     [theme.breakpoints.up("sm")]: {
       color: "red",
-      fontSize: "28px",
+      fontSize: "25px",
     },
     [theme.breakpoints.up("md")]: {
-      // color: "red",
-      // fontSize: "36px",
+      color: "red",
+      fontSize: "40px",
     },
     [theme.breakpoints.up("lg")]: {
       color: "red",
-      fontSize: "36px",
+      fontSize: "40px",
     },
   },
   heading: {
+    [theme.breakpoints.up("xs")]: {
+      color: "white",
+      fontSize: "18px",
+      padding: "10px 0px 20px 0px",
+    },
     [theme.breakpoints.up("sm")]: {
+      color: "white",
+      fontSize: "18px",
+      padding: "10px 0px 20px 0px",
+    },
+    [theme.breakpoints.up("md")]: {
       color: "white",
       fontSize: "28px",
       padding: "10px 0px 20px 0px",
     },
-    [theme.breakpoints.up("md")]: {
-      // color: "white",
-      // fontSize: "26px",
-      // padding: "10px 0px 40px 0px",
-    },
     [theme.breakpoints.up("lg")]: {
       color: "white",
-      fontSize: "26px",
+      fontSize: "28px",
       padding: "10px 0px 20px 0px",
     },
   },
   detail: {
+    [theme.breakpoints.up("xs")]: {
+      paddingBottom: "1px",
+      fontSize: "12px",
+    },
     [theme.breakpoints.up("sm")]: {
       paddingBottom: "1px",
+      fontSize: "12px",
     },
     [theme.breakpoints.up("md")]: {
-      // paddingBottom: "1px",
+      paddingBottom: "1px",
+      fontSize: "20px",
     },
     [theme.breakpoints.up("lg")]: {
       paddingBottom: "1px",
+      fontSize: "20px",
+    },
+  },
+  copyright: {
+    [theme.breakpoints.up("xs")]: {
+      borderTop: "0.5px solid cyan;",
+      marginBottom: "2px",
+    },
+    [theme.breakpoints.up("sm")]: {
+      borderTop: "0.5px solid cyan;",
+      marginBottom: "2px",
+    },
+    [theme.breakpoints.up("md")]: {
+      borderTop: "0.5px solid cyan;",
+      marginBottom: "2px",
+    },
+    [theme.breakpoints.up("lg")]: {
+      borderTop: "0.5px solid cyan;",
+      marginBottom: "2px",
     },
   },
 }));
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   const classes = style();
   return (
     <div className={classes.main}>
-      <Typography className={classes.heading}>Contact me :-</Typography>
-      <IconButton>
-        <a
-          href="https://www.facebook.com/mukulraj21160"
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <FacebookIcon className={classes.btn} />
-        </a>
-      </IconButton>
-      <IconButton>
-        <a
-          href="https://api.whatsapp.com/send?phone=+918448821160"
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <WhatsAppIcon className={classes.btn} />
-        </a>
-      </IconButton>
-      <IconButton>
-        <a
-          href="https://github.com/mukulraj21160"
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <GitHubIcon className={classes.btn} />
-        </a>
-      </IconButton>
-      <IconButton>
-        <a
-          href="https://www.instagram.com/mukul.raj.11/"
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <InstagramIcon className={classes.btn} />
-        </a>
-      </IconButton>
-      <IconButton>
-        <a
-          href="https://www.linkedin.com/in/mukul-raj-makodia-645449208/"
-          target="_blank"
-          rel="noreferrer"
-          style={{ textDecoration: "none", color: "white" }}
-        >
-          <LinkedInIcon className={classes.btn} />
-        </a>
-      </IconButton>
-      <div className={classes.detail}>
-        <p style={{ color: "white" }}>
-          Mukul Raj Makodia | Mob. 8448821160 | mukulraj21160@gmail.com
-        </p>
-      </div>
+      <Grid container item>
+        <Grid item lg={4} md={2} sm={2}></Grid>
+        <Grid item lg={4} md={8} sm={8} xs={12}>
+          <Typography className={classes.heading}>Contact me :-</Typography>
+        </Grid>
+        <Grid item lg={4} md={2} sm={2}></Grid>
+        <Grid item lg={4} md={2} sm={2}></Grid>
+        <Grid item lg={4} md={8} sm={8} xs={12}>
+          <IconButton>
+            <a
+              href="https://www.facebook.com/mukulraj21160"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <FacebookIcon className={classes.btn} />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href="https://api.whatsapp.com/send?phone=+918448821160"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <WhatsAppIcon className={classes.btn} />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href="https://github.com/mukulraj21160"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <GitHubIcon className={classes.btn} />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href="https://www.instagram.com/mukul.raj.11/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <InstagramIcon className={classes.btn} />
+            </a>
+          </IconButton>
+          <IconButton>
+            <a
+              href="https://www.linkedin.com/in/mukul-raj-makodia-645449208/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              <LinkedInIcon className={classes.btn} />
+            </a>
+          </IconButton>
+        </Grid>
+        <Grid item lg={4} md={2} sm={2}></Grid>
+        <Grid item lg={3} md={1} sm={1}></Grid>
+        <Grid item lg={6} md={10} sm={10} xs={12}>
+          <div className={classes.detail}>
+            <div>
+              <p style={{ color: "white" }}>
+                Mukul Raj Makodia | Mob. 8448821160 | mukulraj21160@gmail.com
+              </p>
+            </div>
+            <div>
+              <p className={classes.copyright} style={{ color: "white" }}>
+                Copyright © {year} | All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </Grid>
+        <Grid item lg={3} md={1} sm={1}></Grid>
+      </Grid>
     </div>
   );
 };
