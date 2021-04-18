@@ -64,8 +64,11 @@ const header = () => {
     <div className={classes.main}>
       <div className={classes.nav}>
         <p className={classes.item}>Home</p>
+
         <p className={classes.item}>About</p>
+
         <p className={classes.item}>Projects</p>
+
         <p className={classes.item}>Contact me</p>
       </div>
     </div>

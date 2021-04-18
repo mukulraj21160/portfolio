@@ -35,22 +35,11 @@ const style = makeStyles((theme) => ({
       fontSize: "36px",
     },
   },
-  iconButton: {
-    [theme.breakpoints.up("sm")]: {
-      padding: "15px 0px 40px 0px",
-    },
-    [theme.breakpoints.up("md")]: {
-      // padding: "15px 0px 40px 0px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      padding: "15px 0px 40px 0px",
-    },
-  },
   heading: {
     [theme.breakpoints.up("sm")]: {
       color: "white",
       fontSize: "28px",
-      padding: "10px 0px 40px 0px",
+      padding: "10px 0px 20px 0px",
     },
     [theme.breakpoints.up("md")]: {
       // color: "white",
@@ -60,7 +49,7 @@ const style = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       color: "white",
       fontSize: "26px",
-      padding: "10px 0px 40px 0px",
+      padding: "10px 0px 20px 0px",
     },
   },
   detail: {
@@ -80,24 +69,57 @@ const Footer = () => {
   const classes = style();
   return (
     <div className={classes.main}>
-      <Typography className={classes.heading}>Connect with us</Typography>
-      <div className={classes.iconButton}>
-        <IconButton>
+      <Typography className={classes.heading}>Contact me :-</Typography>
+      <IconButton>
+        <a
+          href="https://www.facebook.com/mukulraj21160"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <FacebookIcon className={classes.btn} />
-        </IconButton>
-        <IconButton>
+        </a>
+      </IconButton>
+      <IconButton>
+        <a
+          href="https://api.whatsapp.com/send?phone=+918448821160"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <WhatsAppIcon className={classes.btn} />
-        </IconButton>
-        <IconButton>
+        </a>
+      </IconButton>
+      <IconButton>
+        <a
+          href="https://github.com/mukulraj21160"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <GitHubIcon className={classes.btn} />
-        </IconButton>
-        <IconButton>
+        </a>
+      </IconButton>
+      <IconButton>
+        <a
+          href="https://www.instagram.com/mukul.raj.11/"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <InstagramIcon className={classes.btn} />
-        </IconButton>
-        <IconButton>
+        </a>
+      </IconButton>
+      <IconButton>
+        <a
+          href="https://www.linkedin.com/in/mukul-raj-makodia-645449208/"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: "none", color: "white" }}
+        >
           <LinkedInIcon className={classes.btn} />
-        </IconButton>
-      </div>
+        </a>
+      </IconButton>
       <div className={classes.detail}>
         <p style={{ color: "white" }}>
           Mukul Raj Makodia | Mob. 8448821160 | mukulraj21160@gmail.com

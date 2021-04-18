@@ -8,7 +8,6 @@ const style = makeStyles((theme) => ({
   main: {
     [theme.breakpoints.up("sm")]: {
       textAlign: "center",
-      marginTop: "30px",
       borderBottom: "0.5px solid #000000;",
     },
 
@@ -19,7 +18,6 @@ const style = makeStyles((theme) => ({
     },
     [theme.breakpoints.up("lg")]: {
       textAlign: "center",
-      marginTop: "30px",
       borderBottom: "0.5px solid #000000;",
     },
   },
@@ -91,7 +89,7 @@ const style = makeStyles((theme) => ({
       // fontWeigth: "bold",
     },
     [theme.breakpoints.up("lg")]: {
-      fontSize: "42px",
+      fontSize: "32px",
       fontWeigth: "bold",
     },
   },
@@ -101,17 +99,19 @@ const About = () => {
   const classes = style();
   return (
     <div className={classes.main}>
-      <Typography className={classes.heading}>About us</Typography>
+      <Typography className={classes.heading}>About me</Typography>
       <img className={classes.image} src={mukul} alt="custom" />
       <h2>Hii...What's up??...BTW I am...</h2>
       <h5>
-        ..a full satck web developer from delhi. i have serious passion
+        ..a full stack web developer from delhi. i have serious passion
         <br />
         for my work. i have to design web pages with creative UI effects,
         <br />
         animations, and dynamic user experiences.
       </h5>
-      <h2 style={{ color: "navy" }}>Let's create something special</h2>
+      <h2 style={{ color: "#9d25fb", fontSize: "32px" }}>
+        Let's create something special
+      </h2>
       <br />
       <Grid container item className={classes.progress_bar}>
         <Grid item lg={4} md={4} sm={4}>

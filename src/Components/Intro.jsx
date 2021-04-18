@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, makeStyles, Typography } from "@material-ui/core";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+// import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 import backgroundimg from "../Assets/bkimg.png";
 
 const style = makeStyles((theme) => ({
@@ -128,9 +129,15 @@ const intro = () => {
           variant="contained"
         >
           <Typography className={classes.btn_title} style={{ color: "white" }}>
-            view my work
+            get cv
           </Typography>
-          <ChevronRightIcon style={{ color: "white", paddingRight: "10px" }} />
+          <CloudDownloadIcon
+            style={{
+              color: "white",
+              paddingRight: "10px",
+              paddingLeft: "10px",
+            }}
+          />
         </Button>
       </div>
     </div>
