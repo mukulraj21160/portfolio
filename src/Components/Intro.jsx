@@ -42,7 +42,7 @@ const style = makeStyles((theme) => ({
       textAlign: "center",
     },
     [theme.breakpoints.up("sm")]: {
-      paddingTop: "230px",
+      paddingTop: "165px",
       textAlign: "center",
     },
     [theme.breakpoints.up("md")]: {
