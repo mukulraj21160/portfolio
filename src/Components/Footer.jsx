@@ -72,41 +72,33 @@ const style = makeStyles((theme) => ({
   detail: {
     [theme.breakpoints.up("xs")]: {
       fontFamily: "Marck Script, cursive",
-      paddingBottom: "1px",
       fontSize: "12px",
     },
     [theme.breakpoints.up("sm")]: {
       fontFamily: "Marck Script, cursive",
-      paddingBottom: "1px",
       fontSize: "12px",
     },
     [theme.breakpoints.up("md")]: {
       fontFamily: "Marck Script, cursive",
-      paddingBottom: "1px",
       fontSize: "20px",
     },
     [theme.breakpoints.up("lg")]: {
       fontFamily: "Marck Script, cursive",
-      paddingBottom: "1px",
       fontSize: "20px",
     },
   },
   copyright: {
     [theme.breakpoints.up("xs")]: {
       borderTop: "0.5px solid cyan;",
-      marginBottom: "2px",
     },
     [theme.breakpoints.up("sm")]: {
       borderTop: "0.5px solid cyan;",
-      marginBottom: "2px",
     },
     [theme.breakpoints.up("md")]: {
       borderTop: "0.5px solid cyan;",
-      marginBottom: "2px",
     },
     [theme.breakpoints.up("lg")]: {
       borderTop: "0.5px solid cyan;",
-      marginBottom: "2px",
     },
   },
 }));
@@ -184,12 +176,13 @@ const Footer = () => {
                 Mukul Raj Makodia | Mob. 8448821160 | mukulraj21160@gmail.com
               </p>
             </div>
-            <div className={classes.copyright}>
-              <p style={{ color: "white" }}>
-                Copyright © {year} | All Rights Reserved.
-              </p>
-            </div>
           </div>
+
+          {/* <div> */}
+          <p className={classes.copyright} style={{ color: "white" }}>
+            Copyright © {year} | All Rights Reserved.
+          </p>
+          {/* </div> */}
         </Grid>
         <Grid item lg={3} md={1} sm={1}></Grid>
       </Grid>
