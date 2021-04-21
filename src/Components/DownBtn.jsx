@@ -9,7 +9,6 @@ const style = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       textAlign: "center",
     },
-
     [theme.breakpoints.up("md")]: {
       textAlign: "center",
     },
@@ -24,7 +23,6 @@ const style = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       fontSize: "14px",
     },
-
     [theme.breakpoints.up("md")]: {
       fontSize: "15px",
     },

@@ -45,21 +45,25 @@ const style = makeStyles((theme) => ({
   },
   heading: {
     [theme.breakpoints.up("xs")]: {
+      fontFamily: "Marck Script, cursive",
       color: "white",
       fontSize: "18px",
       padding: "10px 0px 20px 0px",
     },
     [theme.breakpoints.up("sm")]: {
+      fontFamily: "Marck Script, cursive",
       color: "white",
       fontSize: "18px",
       padding: "10px 0px 20px 0px",
     },
     [theme.breakpoints.up("md")]: {
+      fontFamily: "Marck Script, cursive",
       color: "white",
       fontSize: "28px",
       padding: "10px 0px 20px 0px",
     },
     [theme.breakpoints.up("lg")]: {
+      fontFamily: "Marck Script, cursive",
       color: "white",
       fontSize: "28px",
       padding: "10px 0px 20px 0px",
@@ -67,18 +71,22 @@ const style = makeStyles((theme) => ({
   },
   detail: {
     [theme.breakpoints.up("xs")]: {
+      fontFamily: "Marck Script, cursive",
       paddingBottom: "1px",
       fontSize: "12px",
     },
     [theme.breakpoints.up("sm")]: {
+      fontFamily: "Marck Script, cursive",
       paddingBottom: "1px",
       fontSize: "12px",
     },
     [theme.breakpoints.up("md")]: {
+      fontFamily: "Marck Script, cursive",
       paddingBottom: "1px",
       fontSize: "20px",
     },
     [theme.breakpoints.up("lg")]: {
+      fontFamily: "Marck Script, cursive",
       paddingBottom: "1px",
       fontSize: "20px",
     },
@@ -170,14 +178,14 @@ const Footer = () => {
         <Grid item lg={4} md={2} sm={2}></Grid>
         <Grid item lg={3} md={1} sm={1}></Grid>
         <Grid item lg={6} md={10} sm={10} xs={12}>
-          <div className={classes.detail}>
-            <div>
+          <div>
+            <div className={classes.detail}>
               <p style={{ color: "white" }}>
                 Mukul Raj Makodia | Mob. 8448821160 | mukulraj21160@gmail.com
               </p>
             </div>
-            <div>
-              <p className={classes.copyright} style={{ color: "white" }}>
+            <div className={classes.copyright}>
+              <p style={{ color: "white" }}>
                 Copyright © {year} | All Rights Reserved.
               </p>
             </div>

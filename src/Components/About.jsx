@@ -69,24 +69,28 @@ const style = makeStyles((theme) => ({
   },
   heading: {
     [theme.breakpoints.up("xs")]: {
+      fontFamily: "Source Code Pro, monospace",
       fontSize: "26px",
       fontWeigth: "bold",
       marginBottom: "20px",
       borderBottom: "0.5px solid #000000;",
     },
     [theme.breakpoints.up("sm")]: {
+      fontFamily: "Source Code Pro, monospace",
       fontSize: "26px",
       fontWeigth: "bold",
       marginBottom: "20px",
       borderBottom: "0.5px solid #000000;",
     },
     [theme.breakpoints.up("md")]: {
+      fontFamily: "Source Code Pro, monospace",
       fontSize: "42px",
       fontWeigth: "bold",
       marginBottom: "20px",
       borderBottom: "0.5px solid #000000;",
     },
     [theme.breakpoints.up("lg")]: {
+      fontFamily: "Source Code Pro, monospace",
       fontSize: "42px",
       fontWeigth: "bold",
       marginBottom: "20px",
@@ -95,58 +99,70 @@ const style = makeStyles((theme) => ({
   },
   title: {
     [theme.breakpoints.up("xs")]: {
+      fontFamily: "IBM Plex Mono, monospace",
       fontSize: "22px",
       fontWeigth: "bold",
       paddingBottom: "20px",
       paddingTop: "10px",
     },
     [theme.breakpoints.up("sm")]: {
+      fontFamily: "IBM Plex Mono, monospace",
       fontSize: "22px",
       fontWeigth: "bold",
       paddingBottom: "20px",
       paddingTop: "10px",
     },
     [theme.breakpoints.up("md")]: {
+      fontFamily: "IBM Plex Mono, monospace",
       fontSize: "32px",
       fontWeigth: "bold",
     },
     [theme.breakpoints.up("lg")]: {
+      fontFamily: "IBM Plex Mono, monospace",
       fontSize: "32px",
       fontWeigth: "bold",
     },
   },
   title1: {
     [theme.breakpoints.up("xs")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "23px",
       fontWeigth: "bold",
     },
     [theme.breakpoints.up("sm")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "23px",
       fontWeigth: "bold",
     },
     [theme.breakpoints.up("md")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "32px",
       fontWeigth: "bold",
     },
     [theme.breakpoints.up("lg")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "32px",
       fontWeigth: "bold",
     },
   },
   title2: {
     [theme.breakpoints.up("xs")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "13px",
       fontWeigth: "bold",
     },
     [theme.breakpoints.up("sm")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "13px",
       fontWeigth: "bold",
     },
     [theme.breakpoints.up("md")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "18px",
       fontWeigth: "bold",
     },
     [theme.breakpoints.up("lg")]: {
+      fontFamily: "Sacramento, cursive",
       fontSize: "18px",
       fontWeigth: "bold",
     },

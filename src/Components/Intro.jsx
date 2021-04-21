@@ -21,7 +21,6 @@ const style = makeStyles((theme) => ({
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
     },
-
     [theme.breakpoints.up("md")]: {
       backgroundImage: "url(" + backgroundimg + ")",
       height: "100vh",
@@ -39,14 +38,13 @@ const style = makeStyles((theme) => ({
   },
   content: {
     [theme.breakpoints.up("xs")]: {
-      paddingTop: "165px",
+      paddingTop: "230px",
       textAlign: "center",
     },
     [theme.breakpoints.up("sm")]: {
-      paddingTop: "165px",
+      paddingTop: "230px",
       textAlign: "center",
     },
-
     [theme.breakpoints.up("md")]: {
       paddingTop: "200px",
       textAlign: "center",
@@ -57,20 +55,23 @@ const style = makeStyles((theme) => ({
     },
   },
   heading: {
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "30px",
+    [theme.breakpoints.up("xs")]: {
+      fontFamily: "Parisienne, cursive",
+      fontSize: "26px",
       fontWeight: "350",
     },
     [theme.breakpoints.up("sm")]: {
+      fontFamily: "Parisienne, cursive",
       fontSize: "30px",
       fontWeight: "350",
     },
-
     [theme.breakpoints.up("md")]: {
+      fontFamily: "Parisienne, cursive",
       fontSize: "32px",
       fontWeight: "500",
     },
     [theme.breakpoints.up("lg")]: {
+      fontFamily: "Parisienne, cursive",
       fontSize: "32px",
       fontWeight: "500",
     },
@@ -84,7 +85,7 @@ const intro = () => {
       <div className={classes.content}>
         <div style={{ color: "white" }}>
           <Typography className={classes.heading}>
-            Hello, I'm <span style={{ color: "red" }}>Mukul</span>
+            Hello, I'm <span style={{ color: "#39FF14" }}>Mukul</span>
           </Typography>
           <Typography className={classes.heading}>
             I'm a full-stack Web Developer
