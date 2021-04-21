@@ -72,11 +72,11 @@ const style = makeStyles((theme) => ({
   detail: {
     [theme.breakpoints.up("xs")]: {
       fontFamily: "Marck Script, cursive",
-      fontSize: "12px",
+      fontSize: "14px",
     },
     [theme.breakpoints.up("sm")]: {
       fontFamily: "Marck Script, cursive",
-      fontSize: "12px",
+      fontSize: "14px",
     },
     [theme.breakpoints.up("md")]: {
       fontFamily: "Marck Script, cursive",
@@ -108,7 +108,7 @@ const Footer = () => {
   const classes = style();
   return (
     <div className={classes.main}>
-      <Grid container item>
+      <Grid container item className={classes.copyright}>
         <Grid item lg={4} md={2} sm={2}></Grid>
         <Grid item lg={4} md={8} sm={8} xs={12}>
           <Typography className={classes.heading}>Contact me :-</Typography>
@@ -170,19 +170,13 @@ const Footer = () => {
         <Grid item lg={4} md={2} sm={2}></Grid>
         <Grid item lg={3} md={1} sm={1}></Grid>
         <Grid item lg={6} md={10} sm={10} xs={12}>
-          <div>
-            <div className={classes.detail}>
-              <p style={{ color: "white" }}>
-                Mukul Raj Makodia | Mob. 8448821160 | mukulraj21160@gmail.com
-              </p>
-            </div>
+          <div className={classes.detail}>
+            <p style={{ color: "white" }}>
+              Mukul Raj Makodia | Mob. 8448821160 | mukulraj21160@gmail.com
+              <br />
+              Copyright © {year}
+            </p>
           </div>
-
-          {/* <div> */}
-          <p className={classes.copyright} style={{ color: "white" }}>
-            Copyright © {year} | All Rights Reserved.
-          </p>
-          {/* </div> */}
         </Grid>
         <Grid item lg={3} md={1} sm={1}></Grid>
       </Grid>
