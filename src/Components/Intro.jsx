@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import backgroundimg from "../Assets/bkimg.png";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
-import Resume from "../Assets/docs/_Mukul's_CV.pdf";
+import Resume from "../Assets/docs/CV.pdf";
 import DownBtn from "./DownBtn";
 
 const style = makeStyles((theme) => ({
