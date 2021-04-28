@@ -3,6 +3,7 @@ import { Grid, makeStyles, Typography } from "@material-ui/core";
 import counter from "../Assets/counter.png";
 import todo from "../Assets/todo.png";
 import google from "../Assets/note.png";
+import Login from "../Assets/login.png";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -206,7 +207,11 @@ const Projects = () => {
                 title="Counter Application"
               />
               <CardContent>
-                <Typography variant="h5" component="h2">
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  style={{ overflowWrap: "break-word" }}
+                >
                   Counter App
                 </Typography>
               </CardContent>
@@ -241,7 +246,11 @@ const Projects = () => {
                 title="ToDo App"
               />
               <CardContent>
-                <Typography variant="h5" component="h2">
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  style={{ overflowWrap: "break-word" }}
+                >
                   Todo App
                 </Typography>
               </CardContent>
@@ -249,6 +258,45 @@ const Projects = () => {
             <CardActions>
               <a
                 href="https://todo-list-react-app.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Button variant="contained" size="small" color="primary">
+                  Visit Site
+                </Button>
+              </a>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          md={4}
+          sm={6}
+          xs={12}
+          style={{ display: "flex", justifyContent: "space-evenly" }}
+        >
+          <Card className={classes.card}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image={Login}
+                title="Glassmorphism Login"
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  style={{ overflowWrap: "break-word" }}
+                >
+                  Glassmorphism
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a
+                href="https://login-form-nine.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ textDecoration: "none", color: "white" }}
