@@ -1,10 +1,12 @@
 import React from "react";
 import { Grid, makeStyles, Typography } from "@material-ui/core";
-import counter from "../Assets/counter.png";
-import todo from "../Assets/todo.png";
-import google from "../Assets/note.png";
-import Login from "../Assets/login.png";
-import Disney from "../Assets/Disney.png";
+import counter from "../Assets/counter.PNG";
+import todo from "../Assets/todo.PNG";
+import google from "../Assets/keep.PNG";
+import Login from "../Assets/login.PNG";
+import Disney from "../Assets/disney.PNG";
+import crigroup from "../Assets/crigroup.PNG";
+import hodlinfo from "../Assets/indexPage1.PNG";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -14,114 +16,50 @@ import Button from "@material-ui/core/Button";
 
 const style = makeStyles((theme) => ({
   main: {
-    [theme.breakpoints.up("xs")]: {
-      textAlign: "center",
-      borderBottom: "0.5px solid #000000;",
-    },
-    [theme.breakpoints.up("sm")]: {
-      textAlign: "center",
-      borderBottom: "0.5px solid #000000;",
-    },
+    textAlign: "center",
     [theme.breakpoints.up("md")]: {
-      textAlign: "center",
       marginTop: "20px",
       marginBottom: "50px",
-      borderBottom: "0.5px solid #000000;",
     },
     [theme.breakpoints.up("lg")]: {
-      textAlign: "center",
       marginTop: "20px",
       marginBottom: "50px",
-      borderBottom: "0.5px solid #000000;",
     },
   },
   heading: {
-    [theme.breakpoints.up("xs")]: {
-      fontFamily: "Source Code Pro, monospace",
-      fontSize: "26px",
-      fontWeigth: "bold",
-      marginBottom: "20px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontFamily: "Source Code Pro, monospace",
-      fontSize: "26px",
-      fontWeigth: "bold",
-      marginBottom: "20px",
-    },
+    fontFamily: "Source Code Pro, monospace",
+    fontSize: "26px",
+    fontWeigth: "bold",
+    marginBottom: "20px",
     [theme.breakpoints.up("md")]: {
-      fontFamily: "Source Code Pro, monospace",
       fontSize: "42px",
-      fontWeigth: "bold",
       marginBottom: "50px",
     },
     [theme.breakpoints.up("lg")]: {
-      fontFamily: "Source Code Pro, monospace",
       fontSize: "42px",
-      fontWeigth: "bold",
       marginBottom: "50px",
     },
   },
   image: {
-    [theme.breakpoints.up("xs")]: {
-      marginBottom: "30px",
-      height: "200px",
-      width: "200px",
-      cursor: "pointer",
-      "&:hover": {
-        //
-      },
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginBottom: "30px",
-      height: "200px",
-      width: "200px",
-      cursor: "pointer",
-      "&:hover": {
-        //
-      },
-    },
+    marginBottom: "30px",
+    height: "200px",
+    width: "200px",
+    cursor: "pointer",
     [theme.breakpoints.up("md")]: {
-      marginBottom: "30px",
       height: "300px",
       width: "300px",
-      cursor: "pointer",
-      "&:hover": {
-        //
-      },
     },
     [theme.breakpoints.up("lg")]: {
-      marginBottom: "30px",
       height: "300px",
       width: "300px",
-      cursor: "pointer",
-      "&:hover": {
-        //
-      },
     },
   },
   main_grid: {
-    [theme.breakpoints.up("xs")]: {
-      textAlign: "center",
-    },
-    [theme.breakpoints.up("sm")]: {
-      textAlign: "center",
-    },
-    [theme.breakpoints.up("md")]: {
-      textAlign: "center",
-    },
-    [theme.breakpoints.up("lg")]: {
-      textAlign: "center",
-    },
+    textAlign: "center",
   },
   media: {
-    [theme.breakpoints.up("xs")]: {
-      height: 200,
-      width: 250,
-    },
-    [theme.breakpoints.up("sm")]: {
-      height: 200,
-      width: 250,
-    },
+    height: 200,
+    width: 250,
     [theme.breakpoints.up("md")]: {
       height: 300,
       width: 300,
@@ -132,18 +70,7 @@ const style = makeStyles((theme) => ({
     },
   },
   card: {
-    [theme.breakpoints.up("xs")]: {
-      marginBottom: "20px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginBottom: "20px",
-    },
-    [theme.breakpoints.up("md")]: {
-      marginBottom: "20px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      marginBottom: "20px",
-    },
+    marginBottom: "20px",
   },
 }));
 
@@ -157,7 +84,82 @@ const Projects = () => {
           item
           lg={4}
           md={4}
-          sm={6}
+          xs={12}
+          style={{ display: "flex", justifyContent: "space-evenly" }}
+        >
+          <Card className={classes.card}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image={hodlinfo}
+                title="Hodlinfo Website"
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  style={{ overflowWrap: "break-word" }}
+                >
+                  Hodlinfo Website Clone
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a
+                href="https://project-quadb.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Button variant="contained" size="small" color="primary">
+                  Visit Site
+                </Button>
+              </a>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          md={4}
+          xs={12}
+          style={{ display: "flex", justifyContent: "space-evenly" }}
+        >
+          <Card className={classes.card}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image={crigroup}
+                title="Crigroup Website"
+              />
+              <CardContent>
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  style={{ overflowWrap: "break-word" }}
+                >
+                  Crigroup Website Clone
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <a
+                href="https://project-netart.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <Button variant="contained" size="small" color="primary">
+                  Visit Site
+                </Button>
+              </a>
+            </CardActions>
+          </Card>
+        </Grid>
+        <Grid
+          item
+          lg={4}
+          md={4}
           xs={12}
           style={{ display: "flex", justifyContent: "space-evenly" }}
         >
@@ -196,7 +198,6 @@ const Projects = () => {
           item
           lg={4}
           md={4}
-          sm={6}
           xs={12}
           style={{ display: "flex", justifyContent: "space-evenly" }}
         >
@@ -235,7 +236,6 @@ const Projects = () => {
           item
           lg={4}
           md={4}
-          sm={6}
           xs={12}
           style={{ display: "flex", justifyContent: "space-evenly" }}
         >
@@ -274,7 +274,6 @@ const Projects = () => {
           item
           lg={4}
           md={4}
-          sm={6}
           xs={12}
           style={{ display: "flex", justifyContent: "space-evenly" }}
         >
@@ -313,7 +312,6 @@ const Projects = () => {
           item
           lg={4}
           md={4}
-          sm={6}
           xs={12}
           style={{ display: "flex", justifyContent: "space-evenly" }}
         >

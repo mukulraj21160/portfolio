@@ -7,71 +7,31 @@ import DownBtn from "./DownBtn";
 
 const style = makeStyles((theme) => ({
   main: {
-    [theme.breakpoints.up("xs")]: {
-      backgroundImage: "url(" + backgroundimg + ")",
-      height: "100vh",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-    },
-    [theme.breakpoints.up("sm")]: {
-      backgroundImage: "url(" + backgroundimg + ")",
-      height: "100vh",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-    },
-    [theme.breakpoints.up("md")]: {
-      backgroundImage: "url(" + backgroundimg + ")",
-      height: "100vh",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-    },
-    [theme.breakpoints.up("lg")]: {
-      backgroundImage: "url(" + backgroundimg + ")",
-      height: "100vh",
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-    },
+    backgroundImage: "url(" + backgroundimg + ")",
+    height: "100vh",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   },
   content: {
-    [theme.breakpoints.up("xs")]: {
-      paddingTop: "230px",
-      textAlign: "center",
-    },
-    [theme.breakpoints.up("sm")]: {
-      paddingTop: "165px",
-      textAlign: "center",
-    },
+    paddingTop: "230px",
+    textAlign: "center",
     [theme.breakpoints.up("md")]: {
       paddingTop: "200px",
-      textAlign: "center",
     },
     [theme.breakpoints.up("lg")]: {
       paddingTop: "200px",
-      textAlign: "center",
     },
   },
   heading: {
-    [theme.breakpoints.up("xs")]: {
-      fontFamily: "Parisienne, cursive",
-      fontSize: "26px",
-      fontWeight: "350",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontFamily: "Parisienne, cursive",
-      fontSize: "30px",
-      fontWeight: "350",
-    },
+    fontFamily: "Parisienne, cursive",
+    fontSize: "26px",
+    fontWeight: "350",
     [theme.breakpoints.up("md")]: {
-      fontFamily: "Parisienne, cursive",
       fontSize: "32px",
       fontWeight: "500",
     },
     [theme.breakpoints.up("lg")]: {
-      fontFamily: "Parisienne, cursive",
       fontSize: "32px",
       fontWeight: "500",
     },

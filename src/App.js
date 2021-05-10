@@ -1,19 +1,14 @@
-import Intro from "./Components/Intro";
-// import Header from "./Components/Header";
-import About from "./Components/About";
-import Projects from "./Components/Projects";
-import Footer from "./Components/Footer";
+import React from "react";
+import { ThemeProvider } from "@material-ui/styles";
+import Theme from "./Themes/Theme";
+import Home from "./Pages/Home";
 
-function App() {
+export default function App() {
   return (
     <div>
-      <Intro />
-      {/* <Header /> */}
-      <About />
-      <Projects />
-      <Footer />
+      <ThemeProvider theme={Theme}>
+        <Home />
+      </ThemeProvider>
     </div>
   );
 }
-
-export default App;

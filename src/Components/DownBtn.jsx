@@ -3,32 +3,10 @@ import { Button, makeStyles } from "@material-ui/core";
 
 const style = makeStyles((theme) => ({
   main: {
-    [theme.breakpoints.up("xs")]: {
-      textAlign: "center",
-    },
-    [theme.breakpoints.up("sm")]: {
-      textAlign: "center",
-    },
-    [theme.breakpoints.up("md")]: {
-      textAlign: "center",
-    },
-    [theme.breakpoints.up("lg")]: {
-      textAlign: "center",
-    },
+    textAlign: "center",
   },
   btn_title: {
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "12px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "14px",
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "15px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "15px",
-    },
+    fontSize: "12px",
   },
 }));
 
